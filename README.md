@@ -6,7 +6,7 @@
 |:-------------------:|:-------------:|
 | Brendo Rotta        | 22            |
 | Carlos Henrique     | 19            |
-| Cathariny Damasceno | 10            |
+| Cathariny Damasceno | 20            |
 | Gabriel de Nóbrega  | 21            |
 
   
