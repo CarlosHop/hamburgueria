@@ -1,0 +1,65 @@
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    font-family: 'MADE Soulmaze', sans-serif;
+    /*font-family: 'MADE Soulmaze Outline', sans-serif;*/
+    background-color: black;
+    font-style: italic; 
+    width: 100%; 
+    height: 100%;
+    justify-content: center;
+}
+
+/* NAVBAAAR */
+
+header {
+    background: #3D0101;
+    background: linear-gradient(55deg, #3D0101 0%, rgba(0,0,0,1) 83%);
+    width: 100%;    
+}
+
+.nav__bar {
+    width: 98vw;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu__celular {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.nav__bar img {
+    width: 400px;
+    height: auto;
+    justify-content: center;
+}
+
+.icon img{
+    width: 20px;
+    height: 20px;
+}
+
+/* MAAAIINNNNS */
+
+.produtos ol{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+.produtos ol img{
+    width: 45%;
+    height: 55vh;
+}

@@ -41,13 +41,15 @@ header {
     gap: 1em;
 }
 
-.fa-solid .fa-burguer{
-    color: white;
+.menu__celular > a {
+    width: 50px;
+    height: auto;
 }
 
-.menu__celular a{
+.menu__celular a i{
     width: 40px;
     height: 40px;
+    background-color: white;
 }
 
 .nav__bar img {
@@ -78,20 +80,25 @@ header {
 
 /* MAAAAAIN */
 
-.container-bug img{
+.container-bug{
     width: 100%;
-    height: 40em;
-    position: relative;
+    height: 100vh;
+    background-image: url("../img/burguer.jpg");
+    background-repeat: no-repeat ;
+    background-size: contain;
+    background-position: center;
+    
 }
 
 .container-bug article {
     width: 100%;
     height: 100%;
+    padding-top: 3em;
+    padding-right: 12em;
+    text-align: end;
 }
 
 .container-bug h1 {
-    text-align: left;
-    margin-left: 3em;
     font-size: 2em;
     color: #FE0002;
     font-family: 'MADE Soulmaze Outline', sans-serif;
@@ -132,6 +139,7 @@ header {
 
 .container-text p{
     padding-left: 2em;
+    padding-right: 1em;
 }
 
 .container-local{
@@ -301,7 +309,7 @@ textarea{
 } 
 
 .footer-col .social-links a i{
-    margin-top: 1.75vh;
+    justify-content: center;
 }
 
   
