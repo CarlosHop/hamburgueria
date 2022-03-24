@@ -23,7 +23,4 @@
     <img width="100%" src="https://user-images.githubusercontent.com/84252664/157677698-b224312a-24c3-4657-becd-295774b20e23.jpg">
 </p>
 
-### Please, disconsider everything you see below this point.
-
-***
 
