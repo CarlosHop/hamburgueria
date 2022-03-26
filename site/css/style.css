@@ -83,30 +83,11 @@ header {
 .container-bug{
     width: 100%;
     height: 100vh;
-    background-image: url("../img/burguer.jpg");
+    background-image: url("../img/banner.png");
     background-repeat: no-repeat ;
     background-size: contain;
     background-position: center;
     
-}
-
-.container-bug article {
-    width: 100%;
-    height: 100%;
-    padding-top: 3em;
-    padding-right: 12em;
-    text-align: end;
-}
-
-.container-bug h1 {
-    font-size: 2em;
-    color: #FE0002;
-    font-family: 'MADE Soulmaze Outline', sans-serif;
-}
-
-.container-bug p{
-    margin-top: 1em;
-    margin-left: 5em;
 }
 
 .container-nos{
@@ -148,8 +129,7 @@ header {
     display: flex;
     flex-direction: row;
     padding: 3em 10em;
-    background-color: #3D0101;
-    background: linear-gradient(-55deg, #3D0101 0%, rgba(0,0,0,1) 100%);
+    background-image: url(../img/svg.png);
     font-family: 'MADE Soulmaze Outline', sans-serif;
 }
 
@@ -166,13 +146,13 @@ header {
     width: 40em;
 }
 
-
+.map img{
+    border-radius: 20%;
+}
 .container-form{
     width: 100%;
     height: 640px;
-    background: #3D0101;
-    background: radial-gradient(circle, #3D0101 30%, rgba(0,0,0,1) 99%);
-    margin-top: 2em;
+    background-image: url(../img/svg90.png);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -233,6 +213,12 @@ textarea{
     background-color: black;
 }
 
+.btn-login:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
 .container-foot{
     width: 100%;
     height: 280px;
@@ -276,7 +262,8 @@ textarea{
     color: white;
     text-decoration: none;
     font-weight: 300;
-    display: block;
+    display: flex;
+    justify-content: center;
     display: all 0.3s ease;
 }
 
