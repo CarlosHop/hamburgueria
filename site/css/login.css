@@ -17,6 +17,7 @@ body{
     width: 100%; 
     height: 100%;
     justify-content: center;
+    background-image: url(../img/fundo.jpg);
 }
 
 /* NAVBAAAR */
@@ -65,93 +66,16 @@ header {
 
 .nav__bar ul li a:first-of-type {
     margin-right: 1em;
-}
+}       
 
 .nav__bar ul li a {
     color: white;
     font-size: 2em;
 }
 
-.icon img{
-    width: 20px;
-    height: 20px;
-}
-
-/* MAAAAAIN */
-
-.container-bug{
-    width: 100%;
-    height: 100vh;
-    background-image: url("../img/banner.png");
-    background-repeat: no-repeat ;
-    background-size: contain;
-    background-position: center;
-}
-
-.container-nos{
-    width: 100%;
-    height: 780px;
-    display: flex;
-    flex-direction: row;
-    padding-top: 5em;
-    margin: 5em 0;
-}
-
-.container-nos img{
-    height: 40em;
-    width: 50em;
-    padding-left: 5em;
-}
-
-.container-text{
-    width: 40em;
-    height: 40em;
-}
-
-.container-text h1{
-    padding-left: 2em;
-    padding-top: 5em;
-    padding-bottom: 1em;
-    font-size: 2em;
-    color: #FE0002;
-    font-family: 'MADE Soulmaze Outline', sans-serif;
-}
-
-.container-text p{
-    padding-left: 2em;
-    padding-right: 1em;
-}
-
-.container-local{
-    height: 740px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    padding: 3em 10em;
-    background-image: url(../img/svg.png);
-    font-family: 'MADE Soulmaze Outline', sans-serif;
-}
-
-.container-local h1{
-    padding-bottom: 1em;
-    font-size: 2em;
-    color: #FE0002;
-}
-
-.container-local img{
-    padding-left: 2em;
-    height: 33em;
-    width: 40em;
-}
-
-.map img{
-    border-radius: 20%;
-}
-
 .container-form{
     width: 100%;
-    height: 640px;
-    background-image: url(../img/svg90.png);
+    height: 83vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -159,25 +83,25 @@ header {
 }
 
 .container-form h1{
-    padding-top: 2em;
+    margin: 2em 0;
 }
 
 .form-talk{
-    width: 40em;
-    height: 30em;
-    
-    padding-top: 2em;
+    width: 38em;
+    height: 22em;
+    margin-top: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    background-color: #3D0101;
+    border-radius: 15%;
 }
 
 .container-input{
     display: flex;
     flex-direction: column;
     align-items: left;
-    justify-content: center;
 }
 
 .container-input input{
@@ -188,17 +112,6 @@ header {
     align-items: center;
     border-radius: 20px;
     padding-left: 1em;
-    background-color: black;
-    font-family: 'MADE Soulmaze', sans-serif;
-}
-
-textarea{
-    width: 30em;
-    max-height: 15em;
-    max-height: 15em;
-    padding: 1em 2em;
-    max-width: 35em;
-    border-radius: 30px;
     background-color: black;
     font-family: 'MADE Soulmaze', sans-serif;
 }
@@ -218,12 +131,16 @@ textarea{
     cursor: pointer;
 }
 
+    /*FOOTTEERRR*/
+
 .container-foot{
     width: 100%;
     height: 280px;
-    background-color: black;
     display: flex;
     justify-content: center;
+    margin-top: 1em;
+    background-image: url(../img/footerWave.png);
+    opacity: 90%;
 }
 
 .footer-col{
@@ -261,8 +178,7 @@ textarea{
     color: white;
     text-decoration: none;
     font-weight: 300;
-    display: flex;
-    justify-content: center;
+    display: block;
     display: all 0.3s ease;
 }
 
@@ -297,5 +213,3 @@ textarea{
 .footer-col .social-links a i{
     justify-content: center;
 }
-
-  

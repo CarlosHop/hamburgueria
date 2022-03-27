@@ -56,6 +56,12 @@ header {
     height: 20px;
 }
 
+.logoo a img{
+    width: 400px;
+    height: auto;
+    padding-top: 1em;
+}
+
 /* MAAAIINNNNS */
 
 .products{
@@ -67,7 +73,7 @@ header {
 
 .products img{
     width: 38vw;
-    height: 50vh;
+    height: 55vh;
     padding: 1em;
 }
 
