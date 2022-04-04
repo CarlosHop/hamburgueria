@@ -76,117 +76,57 @@ header {
     height: 20px;
 }
 
-/* MAAAAAIN */
+/* MAAINN */
 
-.container-bug{
-    width: 100%;
-    height: 80vh;
-    background-image: url("../img/banner_background.jpg");
-    background-repeat: no-repeat ;
-    background-size: 100%;
-    background-position: center;
-    box-shadow: inset 0 0 0 1000px rgba(56, 0, 0, 0.7);
-        
-}
 
-.txt1{
-    font-size: 3em;
-    font-style: italic;
-    color:#FE0002;
-    margin: 0;
-    position: absolute;
-    top: 29%;
-    left: 15%;
-}
-
-.txt2{
-    font-size: 3em;
-    font-style: italic;
-    color:#e4e000;
-    margin: 0;
-    position: absolute;
-    top: 32%;
-    left: 15%;
-    font-family: 'MADE Soulmaze Outline', sans-serif;
-}
-
-.lorem1{
-    font-size: 1.2em;
-    margin: 0;
-    position: absolute;
-    top: 45%;
-    left: 15%;
-    max-width: 20em;
-}
-
-.container-nos{
-    width: 100%;
-    height: 780px;
+.cadas h1{
     display: flex;
-    flex-direction: row;
-    padding-top: 2.5em;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+table{
+    display: flex;
+    justify-content: center;
+    min-width: 50em;
+    min-height: 100px;
     margin: 5em 0;
+    text-align: center;
+    border-collapse: collapse;
+    background-color: black;
+    
 }
 
-.container-nos img{
-    height: 30em;
-    width: 40em;
-    padding-left: 5em;
+th{
+    border: 1px solid #F0AE00;
+    padding: 1em;
+    min-height: 3px;
 }
 
-.container-text{
-    width: 40em;
-    height: 40em;
+td{
+    border: 1px solid #F0AE00;
+    padding: 1em;
+    min-height: 3px;
+    min-width: 10em;
 }
 
-.tradicao{
-    font-style: italic;
-}
-.container-text h1{
-    padding-left: 2em;
-    padding-top: 5em;
-    padding-bottom: 1em;
-    font-size: 2em;
-    color: #FE0002;
-    font-family: 'MADE Soulmaze Outline', sans-serif;
+button{
+    font-family: 'MADE Soulmaze', sans-serif;
+    width: 8em;
+    height: 2.5em;
+    margin: 1em;
+    border-radius: 60px;
+    color: black;    
 }
 
-.container-text p{
-    padding-left: 2em;
-    padding-right: 1em;
-}
-
-.container-local{
-    height: 700px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    padding: 3em 10em;
-    background-image: url(../img/svg.png);
-    font-family: 'MADE Soulmaze Outline', sans-serif;
-}
-
-.container-local h1{
-    margin-top: 1em;
-    padding-bottom: 1em;
-    font-size: 2em;
-    color: #FE0002;
-}
-
-.container-local img{
-    padding-left: 3em;
-    height: 28em;
-    width: 35em;
-}
-
-.map img{
-    border-radius: 20%;
+button:hover{
+    background-color: yellow;
+    cursor: pointer;
 }
 
 .container-form{
     width: 100%;
-    height: 640px;
-    background-image: url(../img/svg90.png);
+    height: 83vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -194,25 +134,26 @@ header {
 }
 
 .container-form h1{
-    padding-top: 2em;
+    margin: 2em 0;
 }
 
 .form-talk{
-    width: 40em;
-    height: 30em;
-    
-    padding-top: 2em;
+    width: 38em;
+    height: 22em;
+    margin-top: 1em;
+    margin-bottom: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    background-color: #3D0101;
+    border-radius: 50px;
 }
 
 .container-input{
     display: flex;
     flex-direction: column;
     align-items: left;
-    justify-content: center;
 }
 
 .container-input input{
@@ -221,21 +162,15 @@ header {
     height: 3em;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     border-radius: 20px;
     padding-left: 1em;
     background-color: black;
     font-family: 'MADE Soulmaze', sans-serif;
 }
 
-textarea{
-    width: 30em;
-    max-height: 15em;
-    max-height: 15em;
-    padding: 1em 2em;
-    max-width: 35em;
-    border-radius: 30px;
-    background-color: black;
-    font-family: 'MADE Soulmaze', sans-serif;
+.form-talk h1{
+    margin-top: 3em;
 }
 
 .btn-login{
@@ -258,7 +193,7 @@ textarea{
 .container-foot{
     width: 100%;
     height: 280px;
-    background-color: black;
+    background-image: url(../img/svg90.png);
     display: flex;
     justify-content: center;
 }
@@ -317,7 +252,7 @@ textarea{
     flex-wrap: wrap;
     height: 40px;
     width: 40px;
-    background-color: #3D0101;
+    background-color: black;
     margin:1em 20px 20px 3em;
     text-align: center;
     line-height: 40px;
@@ -334,5 +269,3 @@ textarea{
 .footer-col .social-links a i{
     justify-content: center;
 }
-
-  
