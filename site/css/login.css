@@ -104,6 +104,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: left;
+    gap: 1em;
+    margin-top: 2em;
 }
 
 .container-input input{

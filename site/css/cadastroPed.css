@@ -86,11 +86,10 @@ header {
 }
 
 table{
-    display: flex;
-    justify-content: center;
+    
     min-width: 50em;
     min-height: 100px;
-    margin: 5em 0;
+    margin: 5em auto;
     text-align: center;
     border-collapse: collapse;
     background-color: black;
@@ -154,6 +153,8 @@ button:hover{
     display: flex;
     flex-direction: column;
     align-items: left;
+    gap: 1em;
+    margin-top: 2em;
 }
 
 .container-input input{
