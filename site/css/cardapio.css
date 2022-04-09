@@ -1,20 +1,19 @@
 * {
-    padding:0;
-    margin:0;
-    vertical-align:baseline;
-    list-style:none;
-    border:0;
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    border: 0;
     box-sizing: border-box;
     text-decoration: none;
     color: white;
 }
 
-body{
+body {
     font-family: 'MADE Soulmaze', sans-serif;
     /*font-family: 'MADE Soulmaze Outline', sans-serif;*/
     background-color: black;
-    font-style: italic; 
-    width: 100%; 
+    width: 100%;
     height: 100%;
     justify-content: center;
 }
@@ -23,73 +22,88 @@ body{
 
 header {
     background: #3D0101;
-    background: linear-gradient(55deg, #3D0101 0%, rgba(0,0,0,1) 83%);
-    width: 100%;    
+    background: linear-gradient(55deg, #3D0101 0%, rgba(0, 0, 0, 1) 83%);
+    width: 100%;
 }
 
 .nav__bar {
-    width: 100%;
+    width: 98vw;
     height: 120px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .menu__celular {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     gap: 1em;
 }
 
-.menu__celular a img{
-    width: 4em;
-    height: 4em;
+.menu__celular>a {
+    width: 50px;
+    height: auto;
+}
+
+.menu__celular a i {
+    width: 40px;
+    height: 40px;
+    background-color: white;
 }
 
 .nav__bar img {
-    width: 400px;
+    width: 28em;
     height: auto;
-    justify-content: center;
 }
 
-.icon img{
+.nav__bar ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav__bar ul li a:first-of-type {
+    margin-right: 1em;
+}
+
+.nav__bar ul li a {
+    color: white;
+    font-size: 1.3em;
+}
+
+.icon img {
     width: 20px;
     height: 20px;
 }
 
-.logoo a img{
-    width: 400px;
-    height: auto;
-    padding-top: 1em;
-}
-
 /* MAAAIINNNNS */
 
-.products{
+.products {
     width: 98vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.products img{
+.products img {
     width: 38vw;
     height: 55vh;
     padding: 1em;
 }
 
-.container-foot{
+.container-foot {
     width: 100%;
     height: 280px;
     display: flex;
     justify-content: center;
 }
 
-.footer-col{
+.footer-col {
     width: 45%;
     padding: 5em;
 }
 
-.footer-col h4{
+.footer-col h4 {
     font-size: 18px;
     color: white;
     text-transform: capitalize;
@@ -98,8 +112,8 @@ header {
     position: relative;
 }
 
-.footer-col h4::before{
-    content:'';
+.footer-col h4::before {
+    content: '';
     position: absolute;
     left: 0;
     bottom: -10px;
@@ -109,11 +123,11 @@ header {
     width: 50px;
 }
 
-.footer-col ul li:not(:last-child){
+.footer-col ul li:not(:last-child) {
     margin-bottom: 10px;
 }
 
-.footer-col ul li a{
+.footer-col ul li a {
     font-size: 16px;
     text-transform: capitalize;
     color: white;
@@ -123,22 +137,22 @@ header {
     display: all 0.3s ease;
 }
 
-.footer-col ul li a:hover{
+.footer-col ul li a:hover {
     color: white;
     padding-left: 8px;
 }
 
-.footer-col li a{
+.footer-col li a {
     padding-left: 16px;
 }
 
-.footer-col .social-links a{
+.footer-col .social-links a {
     display: inline-block;
     flex-wrap: wrap;
     height: 40px;
     width: 40px;
     background-color: #3D0101;
-    margin:1em 20px 20px 3em;
+    margin: 1em 20px 20px 3em;
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
@@ -146,11 +160,11 @@ header {
     transition: all 0.5s ease;
 }
 
-.footer-col .social-links a:hover{
+.footer-col .social-links a:hover {
     color: #03045e;
     background-color: white;
-} 
+}
 
-.footer-col .social-links a i{
+.footer-col .social-links a i {
     justify-content: center;
 }

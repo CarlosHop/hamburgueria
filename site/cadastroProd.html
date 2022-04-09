@@ -9,8 +9,8 @@
   <link rel="icon" type="imagem/png" href="img/favicon.png" />
   <link href="http://fonts.cdnfonts.com/css/made-soulmaze" rel="stylesheet" />
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="./css/cadastroPed.css" />
-  <title>Tompero - Pedidos</title>
+  <link rel="stylesheet" href="./css/cadastroProd.css" />
+  <title>Tompero - Produtos</title>
 </head>
 
 <body>
@@ -30,19 +30,18 @@
     </nav>
   </header>
 
-  <div class="cad_ped">
-    <h1 class="txt1">Cadastro de Pedidos</h1>
-    <h1 class="txt2">Cadastro de Pedidos</h1>
+  <div class="cad_produtos">
+    <h1 class="txt1">Cadastro de Produtos</h1>
+    <h1 class="txt2">Cadastro de Produtos</h1>
   </div>
 
-  <table class="cad_pedido">
+  <div class="tab">
+  <table class="cad_prod">
     <thead>
-      <th>Mesa</th>
-      <th>Produto</th>
-      <th>Quantidade</th>
+      <th>Id</th>
+      <th>Nome</th>
       <th>Preço Unitário</th>
-      <th>Preço Total</th>
-      <th>Gerenciamento</th>
+      <th>Opções</th>
     </thead>
 
     <tbody>
@@ -50,10 +49,8 @@
         <td>aaa</td>
         <td>bbb</td>
         <td>ccc</td>
-        <td>ddd</td>
-        <td>eee</td>
         <td>
-          <button>fechar pedido</button>
+          <button>alterar</button>
           <button>deletar</button>
         </td>
       </tr>
@@ -61,10 +58,8 @@
         <td>aaa</td>
         <td>bbb</td>
         <td>ccc</td>
-        <td>ddd</td>
-        <td>eee</td>
         <td>
-          <button>fechar pedido</button>
+          <button>alterar</button>
           <button>deletar</button>
         </td>
       </tr>
@@ -72,10 +67,8 @@
         <td>aaa</td>
         <td>bbb</td>
         <td>ccc</td>
-        <td>ddd</td>
-        <td>eee</td>
         <td>
-          <button>fechar pedido</button>
+          <button>alterar</button>
           <button>deletar</button>
         </td>
       </tr>
@@ -83,36 +76,35 @@
         <td>aaa</td>
         <td>bbb</td>
         <td>ccc</td>
-        <td>ddd</td>
-        <td>eee</td>
         <td>
-          <button>fechar pedido</button>
+          <button>alterar</button>
           <button>deletar</button>
         </td>
       </tr>
     </tbody>
   </table>
+</div>
 
   <main>
     <section class="container-form">
-      <h1>Cadastrar novo pedido:</h1>
+      <h1>Inserir novo produto</h1>
 
       <article class="form-talk">
         <article class="container-input">
           <div class="input-nome">
-            <label for="email">Produto</label>
+            <label for="email"> Nome do produto </label>
             <input placeholder="Digite o nome" autocomplete="off" id="nomeProd" type="text" />
           </div>
 
           <div class="input-prec">
-            <label for="num">Quantidade</label>
+            <label for="num"> Preço do produto </label>
             <input type="text" id="preco" placeholder="Digite o preço" />
           </div>
         </article>
 
         <div>
           <a href="#">
-            <button class="btn-pedido">Cadastrar Pedido</button>
+            <button class="btn-login">Cadastrar</button>
           </a>
         </div>
       </article>

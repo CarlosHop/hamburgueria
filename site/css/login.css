@@ -1,31 +1,31 @@
 * {
-    padding:0;
-    margin:0;
-    vertical-align:baseline;
-    list-style:none;
-    border:0;
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    border: 0;
     box-sizing: border-box;
     text-decoration: none;
     color: white;
 }
 
-body{
+body {
     font-family: 'MADE Soulmaze', sans-serif;
     /*font-family: 'MADE Soulmaze Outline', sans-serif;*/
     background-color: black;
-    font-style: italic; 
-    width: 100%; 
+    width: 100%;
     height: 100%;
     justify-content: center;
     background-image: url(../img/fundo.jpg);
+    box-shadow: inset 0 0 0 1000px rgba(56, 0, 0, 0.7);
 }
 
 /* NAVBAAAR */
 
 header {
     background: #3D0101;
-    background: linear-gradient(55deg, #3D0101 0%, rgba(0,0,0,1) 83%);
-    width: 100%;    
+    background: linear-gradient(55deg, #3D0101 0%, rgba(0, 0, 0, 1) 83%);
+    width: 100%;
 }
 
 .nav__bar {
@@ -42,12 +42,12 @@ header {
     gap: 1em;
 }
 
-.menu__celular > a {
+.menu__celular>a {
     width: 50px;
     height: auto;
 }
 
-.menu__celular a i{
+.menu__celular a i {
     width: 40px;
     height: 40px;
     background-color: white;
@@ -66,16 +66,16 @@ header {
 
 .nav__bar ul li a:first-of-type {
     margin-right: 1em;
-}       
+}
 
 .nav__bar ul li a {
     color: white;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 /* MAAAAAIIINNN*/
 
-.container-form{
+.container-form {
     width: 100%;
     height: 83vh;
     display: flex;
@@ -84,11 +84,11 @@ header {
     font-family: 'MADE Soulmaze Outline', sans-serif;
 }
 
-.container-form h1{
+.container-form h1 {
     margin: 2em 0;
 }
 
-.form-talk{
+.form-talk {
     width: 38em;
     height: 22em;
     margin-top: 1em;
@@ -100,7 +100,7 @@ header {
     border-radius: 50px;
 }
 
-.container-input{
+.container-input {
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -108,7 +108,7 @@ header {
     margin-top: 2em;
 }
 
-.container-input input{
+.container-input input {
     width: 30em;
     max-width: 30em;
     height: 3em;
@@ -120,7 +120,7 @@ header {
     font-family: 'MADE Soulmaze', sans-serif;
 }
 
-.btn-login{
+.btn-login {
     height: 3em;
     width: 15em;
     color: white;
@@ -129,15 +129,15 @@ header {
     background-color: black;
 }
 
-.btn-login:hover{
+.btn-login:hover {
     background-color: white;
     color: black;
     cursor: pointer;
 }
 
-    /*FOOTTEERRR*/
+/*FOOTTEERRR*/
 
-.container-foot{
+.container-foot {
     width: 100%;
     height: 280px;
     display: flex;
@@ -147,12 +147,12 @@ header {
     opacity: 90%;
 }
 
-.footer-col{
+.footer-col {
     width: 45%;
     padding: 5em;
 }
 
-.footer-col h4{
+.footer-col h4 {
     font-size: 18px;
     color: white;
     text-transform: capitalize;
@@ -161,8 +161,8 @@ header {
     position: relative;
 }
 
-.footer-col h4::before{
-    content:'';
+.footer-col h4::before {
+    content: '';
     position: absolute;
     left: 0;
     bottom: -10px;
@@ -172,11 +172,11 @@ header {
     width: 50px;
 }
 
-.footer-col ul li:not(:last-child){
+.footer-col ul li:not(:last-child) {
     margin-bottom: 10px;
 }
 
-.footer-col ul li a{
+.footer-col ul li a {
     font-size: 16px;
     text-transform: capitalize;
     color: white;
@@ -186,22 +186,22 @@ header {
     display: all 0.3s ease;
 }
 
-.footer-col ul li a:hover{
+.footer-col ul li a:hover {
     color: white;
     padding-left: 8px;
 }
 
-.footer-col li a{
+.footer-col li a {
     padding-left: 16px;
 }
 
-.footer-col .social-links a{
+.footer-col .social-links a {
     display: inline-block;
     flex-wrap: wrap;
     height: 40px;
     width: 40px;
     background-color: #3D0101;
-    margin:1em 20px 20px 3em;
+    margin: 1em 20px 20px 3em;
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
@@ -209,11 +209,11 @@ header {
     transition: all 0.5s ease;
 }
 
-.footer-col .social-links a:hover{
+.footer-col .social-links a:hover {
     color: #03045e;
     background-color: white;
-} 
+}
 
-.footer-col .social-links a i{
+.footer-col .social-links a i {
     justify-content: center;
 }
