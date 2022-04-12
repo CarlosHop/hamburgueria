@@ -99,21 +99,17 @@ header {
 
 .tab {
     margin-top: 2rem;
+    margin-left: auto;
     padding: 1px;
-    border: 1px solid #e4e000;
-    border-radius: 20px;
-    display: inline-flex;
 }
 
 table {
-
     min-width: 50em;
     min-height: 100px;
-    /* margin: 5em auto; */
+    margin: 4em auto;
     text-align: center;
     border-collapse: collapse;
     background-color: black;
-    border-radius: 15px;
 
 }
 
@@ -121,20 +117,19 @@ table {
     min-width: 50em;
     min-height: 100px;
     /* margin: 5em auto; */
-    background-color: #3D0101;
-    border-radius: 15px;
+    background-color: #3D0101; 
 
 }
 
 th {
-    /* border: 1px solid #F0AE00; */
+    border: 1px solid #F0AE00;
     padding: 1em;
     min-height: 3px;
     border-radius: 15px;
 }
 
 td {
-    /* border: 1px solid #F0AE00; */
+    border: 1px solid #F0AE00;
     padding: 1em;
     min-height: 3px;
     min-width: 10em;
