@@ -4,6 +4,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import br.senac.apiexemplo.models.produto;
 
-public interface produtoRepository extends JpaRepository<produto, Integer>{
+public interface ProdutoRepository extends JpaRepository<produto, Integer>{
 
 }

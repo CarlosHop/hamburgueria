@@ -1,7 +1,5 @@
 package br.senac.apiexemplo.models;
 
-import java.lang.annotation.Inherited;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
