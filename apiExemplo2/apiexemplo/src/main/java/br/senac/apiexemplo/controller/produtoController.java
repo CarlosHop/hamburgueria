@@ -28,10 +28,28 @@ public class ProdutoController {
     public List<produto> listAllProdutos(){
         return db.findAll();
     }
-
+    
     @GetMapping(path = "/{id}")
     public Optional<produto> findProductsByIOptional (@PathVariable int id){
         return db.findById(id);
+    }
+    
+    @GetMapping(path = "/busca1")
+    public List<produto> listByPreco(Double preco){
+        System.out.println(preco);
+        return db.findByPreco(preco);
+    }
+
+    @GetMapping(path = "/busca2")
+    public List<produto> listByNome(String nome){
+        System.out.println(nome);
+        return db.findByNome(nome);
+    }
+
+    @GetMapping(path = "/busca3")
+    public List<produto> listByNomePartial(String nome){
+        System.out.println(nome);
+        return db.findByNamePartial(nome);
     }
 
     @PostMapping(path = "/")
