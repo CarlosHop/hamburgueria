@@ -52,6 +52,18 @@ public class ProdutoController {
         return db.findByNamePartial(nome);
     }
 
+    @GetMapping(path = "/busca4")
+    public List<produto> findByPrecoHigherThan(Double preco){
+        System.out.println(preco);
+        return db.findByPrecoHigherThan(preco);
+    }
+
+    @GetMapping(path = "/busca5")
+    public List<produto> findByPrecoLessThan(Double preco){
+        System.out.println(preco);
+        return db.findByPrecoLessThan(preco);
+    }
+
     @PostMapping(path = "/")
     public produto saveProduto(@RequestBody produto product){
         return db.save(product);

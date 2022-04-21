@@ -17,4 +17,11 @@ public interface ProdutoRepository extends JpaRepository<produto, Integer>{
 
     @Query("select f from produtos f where nome like %?1%")
     List<produto> findByNamePartial(String nome);
+
+    @Query("select f from produtos f where preco >= ?1")
+    List<produto> findByPrecoHigherThan(Double preco);
+
+    @Query("select f from produtos f where preco <= ?1")
+    List<produto> findByPrecoLessThan(Double preco);
+
 }
