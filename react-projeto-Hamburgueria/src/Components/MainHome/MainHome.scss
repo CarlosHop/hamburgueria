@@ -1,0 +1,115 @@
+.MainHome{
+    //background-color: black;
+
+    .section__1 {
+
+        img{
+            width: 80vw;
+            height: 90vh;
+            margin-left: 10vw;
+        }
+    }
+
+    .section__3{
+        width: 99vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        margin: 4rem 3rem;
+        
+        img{
+            width: 40vw;
+            height: 83vh;
+            margin: 6rem;
+        }
+
+        div{
+            display: flex;
+            flex-direction: column;
+            margin-top: 15rem;
+
+            p{
+                width: 28vw;
+                padding: 1rem;
+            }
+        }
+    }
+
+    .section__4{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../../../public/svg.png);
+
+        img{
+            width: 45vw;
+            height: 70vh;
+            border-radius: 4rem;
+        }
+
+        div{
+            margin: 13rem 4rem;
+        }
+    }
+
+    .section__5{
+        width: 100%;
+        height: 640px;
+        background-image: url(../../../public/svg90.png);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1{
+            padding: 2rem;
+        }
+
+        input{
+            width: 30em;
+            max-width: 30em;
+            height: 3em;
+            margin: 1rem 0;
+            display: flex;
+            align-items: center;
+            border-radius: 20px;
+            padding-left: 1em;
+            background-color: black;
+            border: none;
+        }
+
+        textarea {
+            width: 30em;
+            height: 15em;
+            padding: 1em 2em;
+            margin: 1em 0;
+            border-radius: 30px;
+            resize: none;
+            border: none;
+            background-color: black;
+        }
+
+        button {
+            height: 3em;
+            width: 15em;
+            margin: 1rem 0;
+            color: white;
+            font-family: 'MADE Soulmaze', sans-serif;
+            border-radius: 10px;
+            border: 1px solid white;
+            background-color: black;
+        }
+        
+        button:hover {
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+    }
+}
+
+
+
