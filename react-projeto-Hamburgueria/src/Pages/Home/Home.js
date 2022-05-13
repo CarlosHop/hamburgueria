@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../../Components/Navbar/Navbar';
 import MainHome from '../../Components/MainHome/MainHome';
-
+import Footer from '../../Components/Footer/Footer';
 import "./Home.scss";
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
         <div>
             <Navbar />
             <MainHome />
-            
+            <Footer />
         </div>
     );
 }

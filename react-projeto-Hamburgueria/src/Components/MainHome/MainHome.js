@@ -4,18 +4,17 @@ import "./MainHome.scss";
 const Mainhome = () => {
   return (
     <main className="MainHome">
-      <section className="section__1">
-        <img src="banner_background.jpg" alt="" />
-      </section>
-
+      
       <section className="section__2">
-        <h1>Únicos da casa</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
+        <div>
+          <h1>Únicos da casa</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>   
+        </div>
       </section>
 
       <section className="section__3">

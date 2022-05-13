@@ -1,7 +1,9 @@
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import Home from './Pages/Home/Home';
 import Cardapio from './Pages/Cardapio/Cardapio';
+import Form from './Pages/FormCad/Form';
 import Notfound from './Pages/Notfound/Notfound';
+import Manager from './Pages/Manager/Manager';
 
 function RoutesApp() {
     return(
@@ -9,6 +11,8 @@ function RoutesApp() {
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/cardapio' element={<Cardapio />} />
+                <Route path='/form' element={<Form />} />
+                <Route path='/manager' element={<Manager />} />
                 <Route path='*' element={<Notfound />} /> 
             </Routes>
         </BrowserRouter>
