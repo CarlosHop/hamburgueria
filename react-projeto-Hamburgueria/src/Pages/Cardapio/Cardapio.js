@@ -15,7 +15,7 @@ const Cardapio = () => {
                     <Card title="Hamburguer de Peru" img="./hamPeru.jpg" descricao="Carne de hamburguer e tiras de peeru defumado" />
                     <Card title="Hamburguer de Frango" img="./hamFrango.jpg" descricao="Carne de frango no hamburguer e frios selecionados" />  
                     <Card title="Hamburguer Rei" img="./xrei.jpg" descricao="O maior x-tudo de 2,5Kg de toda a região metropolitana" />
-                    <Card title="meu bug12" img="./xparmesao.jpg" descricao="sla testando 2" />  
+                    <Card title="Hamburguer Parmesão" img="./xparmesao.jpg" descricao="Hambuguer de 125g de carne e 140g de queijo parmesão" />  
                 </div>
         </div>
     );
