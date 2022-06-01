@@ -20,7 +20,7 @@ function RoutesApp() {
                 <Route path='*' element={<Notfound />} /> 
             </Routes>
         </BrowserRouter>
-    )
+    );
 }
 
 export default RoutesApp;

@@ -15,6 +15,8 @@
     .section__2{
         width: 100%;
         height: 80vh;
+        max-width: 1920px;
+        max-height: 1080px;
         background-image: url(../../../public/banner_background.jpg);
         background-repeat: no-repeat;
         background-size: 100%;
@@ -29,41 +31,54 @@
 
     .section__3{
         height: 100vh;
+        width: 100%;
         display: flex;
         flex-direction: row;
         margin: 4rem 3rem;
+        align-items: center;
+        justify-content: center;
         
         img{
             width: 40vw;
             height: 83vh;
+            max-width: 800px;
+            max-height: 750px;
             margin: 6rem;
         }
 
         div{
             display: flex;
             flex-direction: column;
-            margin-top: 15rem;
+            justify-content: center;
 
             p{
                 width: 28vw;
+                height: 15vh;
+                max-width: 750px;
+                max-height: 750px;
                 padding: 1rem;
             }
         }
     }
 
     .section__4{
-        height: 100%;
+        height: 100vh;
         width: 100%;
+        max-height: 1080px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         background-image: url(../../../public/svg.png);
-        margin-top: 4rem;
+        background-repeat: no-repeat;
+        background-size: cover;
 
         img{
             width: 40vw;
             height: 65vh;
+            max-width: 800px;
+           
+            max-height: 750px;
             border-radius: 4rem;
         }
 
@@ -73,9 +88,12 @@
     }
 
     .section__5{
-        height: 100%;
+        height: 100vh;
         width: 100%;
+        max-height: 1080px;
         background-image: url(../../../public/svg90.png);
+        background-repeat: no-repeat;
+        background-size: cover;
         background-color: black;
         display: flex;
         flex-direction: column;

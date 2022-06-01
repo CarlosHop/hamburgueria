@@ -14,69 +14,64 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.senac.apiexemplo.models.produto;
-import br.senac.apiexemplo.repository.ProdutoRepository;
+import br.senac.apiexemplo.models.pedido;
+import br.senac.apiexemplo.repository.PedidoRepository;
 
 @RestController
-@RequestMapping(path = "/produto")
-public class ProdutoController {
+@RequestMapping(path = "/pedidos")
+public class PedidoController {
     
     @Autowired
-    private ProdutoRepository db;
+    private PedidoRepository db;
 
     @GetMapping(path = "/")
-    public List<produto> listAllProdutos(){
+    public List<pedido> listAllPedidos(){
         return db.findAll();
     }
-    
+
     @GetMapping(path = "/{id}")
-    public Optional<produto> findProductsByIdOptional (@PathVariable int id){
+    public Optional<pedido> findProductsByIdOptional (@PathVariable int id){
         return db.findById(id);
-    }
-    
-    @GetMapping(path = "/buscaPreco")
-    public List<produto> listByPreco(Double preco){
-        System.out.println(preco);
-        return db.findByPreco(preco);
     }
 
     @GetMapping(path = "/buscaNome")
-    public List<produto> listByNome(String nome){
-        System.out.println(nome);
-        return db.findByNome(nome);
+    public List<pedido> listByNome(String descricao){
+        System.out.println(descricao);
+        return db.findByNome(descricao);
     }
 
     @GetMapping(path = "/buscaNomeP")
-    public List<produto> listByNomePartial(String nome){
-        System.out.println(nome);
-        return db.findByNamePartial(nome);
+    public List<pedido> listByNomePartial(String descricao){
+        System.out.println(descricao);
+        return db.findByNamePartial(descricao);
     }
 
     @GetMapping(path = "/buscaPrecoHigh")
-    public List<produto> findByPrecoHigherThan(Double preco){
+    public List<pedido> findByPrecoHigherThan(Double preco){
         System.out.println(preco);
         return db.findByPrecoHigherThan(preco);
     }
 
     @GetMapping(path = "/buscaPrecoLess")
-    public List<produto> findByPrecoLessThan(Double preco){
+    public List<pedido> findByPrecoLessThan(Double preco){
         System.out.println(preco);
         return db.findByPrecoLessThan(preco);
     }
 
-    @PostMapping(path = "/")
-    public produto saveProduto(@RequestBody produto product){
-        return db.save(product);
+    @PostMapping(path="/")
+    public pedido savePedidos(@RequestBody pedido request) {
+        return db.save(request);
     }
-
+    
     @PutMapping(path ="/{id}")
-    public ResponseEntity<?> updateProduto(@PathVariable int id, @RequestBody produto product){
+    public ResponseEntity<?> updatePedido(@PathVariable int id, @RequestBody pedido request){
         var resp = db.findById(id);
         if (resp.isPresent()){
-            var currentProduct = resp.get();
-            currentProduct.setNome(product.getNome());
-            currentProduct.setPreco(product.getPreco());
-            db.save(currentProduct);
+            var currentRequest = resp.get();
+            currentRequest.setDescricao(request.getDescricao());
+            currentRequest.setQuantidade(request.getQuantidade());
+            currentRequest.setSituacao(request.getSituacao());
+            db.save(currentRequest);
 
             return ResponseEntity.ok().build();
         }else{
@@ -85,7 +80,7 @@ public class ProdutoController {
     }
 
     @DeleteMapping(path = "/{id}")
-    public ResponseEntity<?> deleteProduto(@PathVariable int id){
+    public ResponseEntity<?> deleteRequest(@PathVariable int id){
         
         var resp = db.findById(id);
         if (resp.isPresent()){
@@ -95,4 +90,5 @@ public class ProdutoController {
             return ResponseEntity.notFound().build();
         }
     }
+    
 }

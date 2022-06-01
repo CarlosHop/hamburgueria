@@ -1,5 +1,88 @@
 .mainBack{
     width: 100%;
-    height: 100vh;
-    background-color: blue;
+    height: 150vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        margin: auto;
+        justify-content: center;
+    }
+
+    table{
+        width: 80%;
+        max-width: 1230px;
+        border-collapse: collapse;
+        
+        th{
+            border: 1px solid yellow;
+            background-color: #3d0000;
+            height: 5vh;
+        }
+
+        td{
+            background-color: black;
+            text-align: center;
+            border: 1px solid yellow;
+            height: 5vh;
+        }
+    }
+
+    h1{
+        margin: 3rem 1.5rem;
+    }
+
+    form{
+        height: 120vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center 
+        //background-color: #3d0000;
+    }
+
+    textarea{
+        width: 25rem;
+        height: 8rem;
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+        resize: none;
+        border-radius: 15px;
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+
+    input{
+        width: 30em;
+        max-width: 30em;
+        height: 3em;
+        margin: auto;
+        margin: 1rem 0;
+        display: flex;
+        align-items: center;
+        border-radius: 20px;
+        padding-left: 1em;
+        background-color: black;
+        border: 1px solid white;
+    }
+
+    button {
+        height: 3em;
+        width: 15em;
+        margin: 4rem 0;
+        color: white;
+        align-self: center;
+        border-radius: 10px;
+        border: 1px solid white;
+        background-color: black;
+    }
+      
+    button:hover {
+      background-color: white;
+      color: black;
+      cursor: pointer;
+    }
 }
