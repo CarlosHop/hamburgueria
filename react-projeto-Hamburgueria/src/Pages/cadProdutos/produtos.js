@@ -8,7 +8,6 @@ import { useState, useEffect } from 'react';
 //  useEffect
 //  React Hooks
 
-
 const Produtos = () => {
 
     const [produtos, setProdutos] = useState([])
@@ -16,12 +15,19 @@ const Produtos = () => {
     const carregarProdutos = async () => {
         const resp = await axios.get('http://localhost:5000/produto/')
         const data = await resp.data;
-        console.log(data)
+        // console.log(data)
         setProdutos(data)
+    }
+
+    const deletarProdutos = async (id) => {
+        // console.log(id)
+        await axios.delete(`http://localhost:5000/produto/${id}`)
+        carregarProdutos();
     }
 
     const criarProdutos = async () => {
         await axios.post('http://localhost:5000/produto/', {id: 20, nome: "bugtest", preco: 12.90})
+        carregarProdutos(); 
     }
 
     const handleInput = event => {
@@ -41,6 +47,7 @@ const Produtos = () => {
                                 <th>ID</th>
                                 <th>Nome</th>
                                 <th>Preço</th>
+                                <th>Ações</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -48,7 +55,9 @@ const Produtos = () => {
                                 <tr key={product.id}>
                                     <td>{product.id}</td>              
                                     <td>{product.nome}</td>              
-                                    <td>R$ {product.preco}</td>              
+                                    <td>R$ {product.preco}</td>
+                                    <td className="btns" > <button className="alterar">alterar</button> 
+                                    <button className="deletar" onClick={() => {deletarProdutos(product.id)}}>deletar</button> </td>              
                                 </tr>
                             ))}
                         </tbody>
@@ -60,7 +69,7 @@ const Produtos = () => {
                         <input type="text" id="nome" placeholder='Digite o nome do produto' onChange={handleInput}/>
                         <label for="preço">Preço</label>
                         <input type="text" id="preco" placeholder='Digite o valor do produto' />
-                        <button class="btn-login"  onClick={criarProdutos}>Enviar</button>
+                        <button className='enviar' onClick={criarProdutos}>Enviar</button>
                     </form>
                 </main>
         </div>

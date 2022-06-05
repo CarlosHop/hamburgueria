@@ -27,9 +27,10 @@ const Pedidos = () => {
             <tr>
               <th>ID</th>
               <th>Descrição</th>
-              <th>Quantidade</th>
+              <th>Mesa</th>
               <th>Situação</th>
               <th>Preco Total</th>
+              <th>Ações</th>
             </tr>
           </thead>
           <tbody>
@@ -37,9 +38,10 @@ const Pedidos = () => {
               <tr key={request.id}>
                 <td>{request.id}</td>
                 <td>{request.descricao}</td>
-                <td>{request.quantidade}</td>
+                <td>{request.mesa}</td>
                 <td>{request.situacao}</td>
                 <td>R$ {request.preco_total}</td>
+                <td className="btns" > <button className="alterar">alterar</button> <button className="deletar" >deletar</button> </td>
               </tr>
             ))}
           </tbody>
@@ -67,7 +69,7 @@ const Pedidos = () => {
             id="price"
             placeholder="Digite o preço total do pedido"
           />
-          <button class="btn-login">Enviar</button>
+          <button className="enviar">Enviar</button>
         </form>
       </main>
     </div>

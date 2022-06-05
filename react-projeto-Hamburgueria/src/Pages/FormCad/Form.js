@@ -8,7 +8,7 @@ const Form = () => {
     return(
         <div className='back'>
             <Navbar/>
-            <FormDoor/>
+            <FormDoor/>           
             <Footer />
         </div>
     );

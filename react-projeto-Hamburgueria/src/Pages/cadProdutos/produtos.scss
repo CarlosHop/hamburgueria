@@ -15,20 +15,56 @@
     table{
         width: 80%;
         max-width: 1230px;
+        min-height: 30rem;
         border-collapse: collapse;
         
         th{
             border: 1px solid yellow;
             background-color: #3d0000;
-            height: 5vh;
+            height: 3rem;
         }
 
         td{
             background-color: black;
             text-align: center;
             border: 1px solid yellow;
-            height: 5vh;
+            height: 5rem;
         }
+        
+        .btns{
+            width: 20em;
+            height: 3em;
+        }
+
+         .alterar{
+            height: 3em;
+            width: 10em;
+            color: white;
+            border-radius: 10px;
+            border: 1px solid white;
+            background-color: black;
+         }
+
+         .alterar:hover {
+            background-color: green;
+            color: white;
+            cursor: pointer;
+          }
+
+         .deletar{
+            height: 3em;
+            width: 10em;
+            color: white;
+            border-radius: 10px;
+            border: 1px solid white;
+            background-color: black;
+         }
+
+         .deletar:hover {
+            background-color: red;
+            color: white;
+            cursor: pointer;
+          }
     }
 
     h1{
@@ -57,7 +93,7 @@
         border: 1px solid white;
     }
 
-    button {
+    .enviar {
         height: 3em;
         width: 15em;
         margin: 4rem 0;
@@ -68,7 +104,7 @@
         background-color: black;
     }
       
-    button:hover {
+    .enviar:hover {
       background-color: white;
       color: black;
       cursor: pointer;

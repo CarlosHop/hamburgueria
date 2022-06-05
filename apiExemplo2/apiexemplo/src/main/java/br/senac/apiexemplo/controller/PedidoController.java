@@ -69,7 +69,7 @@ public class PedidoController {
         if (resp.isPresent()){
             var currentRequest = resp.get();
             currentRequest.setDescricao(request.getDescricao());
-            currentRequest.setQuantidade(request.getQuantidade());
+            currentRequest.setMesa(request.getMesa());
             currentRequest.setSituacao(request.getSituacao());
             db.save(currentRequest);
 

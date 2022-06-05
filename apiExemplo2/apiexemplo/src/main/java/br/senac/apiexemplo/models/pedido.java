@@ -25,8 +25,8 @@ public class pedido {
     @Column(name = "descricao")
     private String descricao;
 
-    @Column(name = "quantidade")
-    private int quantidade;
+    @Column(name = "mesa")
+    private int mesa;
 
     @Column(name = "situacao")
     private String situacao;

@@ -6,6 +6,7 @@ import Notfound from './Pages/Notfound/Notfound';
 import Manager from './Pages/Manager/Manager';
 import Produtos from './Pages/cadProdutos/produtos';
 import Pedidos from './Pages/cadPedidos/pedidos';
+import Testes from './Pages/Testes/teste';
 
 function RoutesApp() {
     return(
@@ -17,6 +18,7 @@ function RoutesApp() {
                 <Route path='/manager' element={<Manager />} />
                 <Route path='/produtos' element={<Produtos />} />
                 <Route path='/pedidos' element={<Pedidos />} />
+                <Route path='/testes' element={<Testes />} />
                 <Route path='*' element={<Notfound />} /> 
             </Routes>
         </BrowserRouter>
